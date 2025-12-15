@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React class 1</title>
+  </head>
+  <body>
+    <form onsubmit="handleForm(event)">
+      <h1>Register Form</h1>
+      <br />
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          placeholder="Enter your Name"
+          id="name"
+          name="name1"
+        />
+        <p id="nameError"></p>
+      </div>
+      <br />
+
+      <div>
+        <label for="description">Description:</label>
+        <input
+          type="text"
+          placeholder="Enter your description"
+          id="description"
+          name="description"
+        />
+        <p id="descriptionError"></p>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          placeholder="Enter your email"
+          id="email"
+          name="email"
+        />
+        <p id="emailError"></p>
+      </div>
+
+
+
+        <br />
+
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="text"
+          placeholder="Enter your password"
+          id="password"
+          name="password"
+        />
+        <p id="passwordError"></p>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="phone">Phone:</label>
+        <input
+          type="number"
+          placeholder="Enter your phone"
+          id="phone"
+          name="phone"
+        />
+        <p id="phoneError"></p>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="gender">Choose Gender:</label>
+        <input type="radio" name="gender" id="gender" value="Male" /> Male
+        <input type="radio" name="gender" id="gender" value="Female" /> Female
+        <input type="radio" name="gender" id="gender" value="Others"> Others
+        <p id="genderError"></p>
+      </div>
+
+      <br />
+      <div>
+        <label for="check">Terms and condition: </label>
+        <input type="checkbox" name="check" id="check" />
+        <p id="checkError"></p>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="profession">Profession:</label>
+        <select name="profession" id="profession">
+          <option value="Student">Student</option>
+          <option value="Experience">Experience</option>
+        </select>
+        <p id="professionError"></p>
+      </div>
+
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+
+  <script src="./build/script.js"></script>
+</html>
